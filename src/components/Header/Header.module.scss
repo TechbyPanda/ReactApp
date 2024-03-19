@@ -1,0 +1,31 @@
+.header{
+    padding: 8px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    nav{
+        display: flex;
+        gap: 18px;
+
+        span{
+            cursor: pointer;
+            position: relative;
+        }
+
+        span:after{
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            content: "";
+            border: 0px solid black;
+            width: 0px;
+        }
+
+        span:hover:after{
+            border: 1px solid black;
+            width: 100%;
+            left: 0;
+        }
+    }
+}
